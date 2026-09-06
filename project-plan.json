@@ -1,0 +1,251 @@
+{
+  "name": "Drift Concord",
+  "slug": "drift-concord",
+  "stage": "Planning only — no product implementation",
+  "waves": [
+    {
+      "id": "W1",
+      "title": "Every seat matters",
+      "outcome": "Prove the crew loop with one expedition.",
+      "taskIds": [
+        "W1-T1",
+        "W1-T2"
+      ]
+    },
+    {
+      "id": "W2",
+      "title": "One ship that behaves consistently",
+      "outcome": "Build the bounded systems needed by that mission.",
+      "taskIds": [
+        "W2-T1",
+        "W2-T2"
+      ]
+    },
+    {
+      "id": "W3",
+      "title": "Bring the crew home",
+      "outcome": "Deliver the first complete cooperative run.",
+      "taskIds": [
+        "W3-T1",
+        "W3-T2"
+      ]
+    },
+    {
+      "id": "W4",
+      "title": "Ships and stories persist",
+      "outcome": "Add identity without turning play into compulsory upkeep.",
+      "taskIds": [
+        "W4-T1",
+        "W4-T2"
+      ]
+    },
+    {
+      "id": "W5",
+      "title": "An open fleet of communities",
+      "outcome": "Let independent operators host useful destinations.",
+      "taskIds": [
+        "W5-T1",
+        "W5-T2"
+      ]
+    },
+    {
+      "id": "W6",
+      "title": "A game worth returning to",
+      "outcome": "Validate variety, performance and host workload.",
+      "taskIds": [
+        "W6-T1",
+        "W6-T2"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "W1-T1",
+      "wave": "W1",
+      "title": "Script the derelict expedition",
+      "goal": "Define preparation, discovery, salvage, a recoverable failure and the return home.",
+      "acceptanceCriteria": [
+        "The mission includes a consequential decision for pilot, engineer and field crew.",
+        "Document an alternate route to completion after one crew member disconnects."
+      ],
+      "dependencies": [],
+      "status": "PLANNED",
+      "body": "Define preparation, discovery, salvage, a recoverable failure and the return home.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W1-T2",
+      "wave": "W1",
+      "title": "Prototype physical crew interactions",
+      "goal": "Test piloting, power rerouting and handling salvage with minimal presentation.",
+      "acceptanceCriteria": [
+        "New players can perform each interaction with visible feedback and remappable controls.",
+        "A small group reports where coordination is enjoyable and where a role is idle."
+      ],
+      "dependencies": [
+        "W1-T1"
+      ],
+      "status": "PLANNED",
+      "body": "Test piloting, power rerouting and handling salvage with minimal presentation.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W2-T1",
+      "wave": "W2",
+      "title": "Implement the ship systems model",
+      "goal": "Connect power, propulsion, doors and damage through explicit state and limits.",
+      "acceptanceCriteria": [
+        "Recorded input sequences replay to the same authoritative system state.",
+        "A broken subsystem has a visible diagnosis and a bounded recovery path."
+      ],
+      "dependencies": [
+        "W1-T1",
+        "W1-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Connect power, propulsion, doors and damage through explicit state and limits.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W2-T2",
+      "wave": "W2",
+      "title": "Implement shared movement and objects",
+      "goal": "Synchronize players and portable cargo in and around one moving ship.",
+      "acceptanceCriteria": [
+        "Cargo ownership and position remain consistent through boarding, docking and reconnect.",
+        "Test interaction latency and collision behavior on documented network conditions."
+      ],
+      "dependencies": [
+        "W1-T1",
+        "W1-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Synchronize players and portable cargo in and around one moving ship.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W3-T1",
+      "wave": "W3",
+      "title": "Build the derelict and salvage objective",
+      "goal": "Author one readable destination with meaningful navigation and cargo choices.",
+      "acceptanceCriteria": [
+        "The expedition has a complete start, salvage decision, return and debrief.",
+        "Recoverable failures change the mission without silently deleting the crew's progress."
+      ],
+      "dependencies": [
+        "W2-T1",
+        "W2-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Author one readable destination with meaningful navigation and cargo choices.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W3-T2",
+      "wave": "W3",
+      "title": "Run first-crew playtests",
+      "goal": "Observe complete expeditions by groups unfamiliar with the design.",
+      "acceptanceCriteria": [
+        "Measure role downtime, onboarding failures and whether crews want another mission.",
+        "Publish a prioritized revision of the mission based on observed play."
+      ],
+      "dependencies": [
+        "W2-T1",
+        "W2-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Observe complete expeditions by groups unfamiliar with the design.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W4-T1",
+      "wave": "W4",
+      "title": "Persist the ship and expedition journal",
+      "goal": "Save configuration, cargo and completed expedition events with recoverable migrations.",
+      "acceptanceCriteria": [
+        "A restarted server restores the ship and identifies incompatible content versions.",
+        "A crew can export its ship history without exposing private account data."
+      ],
+      "dependencies": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Save configuration, cargo and completed expedition events with recoverable migrations.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W4-T2",
+      "wave": "W4",
+      "title": "Build the expedition authoring kit",
+      "goal": "Describe locations, hazards, objectives and outcomes as inspectable mission packages.",
+      "acceptanceCriteria": [
+        "A contributor authors a second expedition without modifying core ship simulation.",
+        "Malformed or malicious package inputs fail before affecting a persistent ship."
+      ],
+      "dependencies": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Describe locations, hazards, objectives and outcomes as inspectable mission packages.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W5-T1",
+      "wave": "W5",
+      "title": "Package community hosting and moderation",
+      "goal": "Deliver host setup, access control, logs and a documented recovery procedure.",
+      "acceptanceCriteria": [
+        "A second operator hosts a complete expedition from the documentation.",
+        "Test abusive joins, role permissions, removal and recovery without giving moderators hidden player advantage."
+      ],
+      "dependencies": [
+        "W4-T1",
+        "W4-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Deliver host setup, access control, logs and a documented recovery procedure.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W5-T2",
+      "wave": "W5",
+      "title": "Prototype explicit sector handoff",
+      "goal": "Design and test ownership transfer between two cooperating sector servers.",
+      "acceptanceCriteria": [
+        "A failed handoff leaves ship and cargo owned in exactly one recoverable location.",
+        "Players see connection and trust boundaries before transferring."
+      ],
+      "dependencies": [
+        "W4-T1",
+        "W4-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Design and test ownership transfer between two cooperating sector servers.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W6-T1",
+      "wave": "W6",
+      "title": "Build a varied expedition pilot",
+      "goal": "Add a bounded set of exploration, rescue and engineering missions using the kit.",
+      "acceptanceCriteria": [
+        "Each mission offers a different crew decision instead of only changing scenery.",
+        "Mixed-experience groups can complete the mission set and report meaningful role choice."
+      ],
+      "dependencies": [
+        "W5-T1",
+        "W5-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Add a bounded set of exploration, rescue and engineering missions using the kit.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    },
+    {
+      "id": "W6-T2",
+      "wave": "W6",
+      "title": "Publish performance and operations findings",
+      "goal": "Measure client performance, supported crew sizes, restoration and content moderation effort.",
+      "acceptanceCriteria": [
+        "Results name hardware, network conditions and mission complexity.",
+        "Set the next capacity target from measured constraints rather than a galaxy-sized launch promise."
+      ],
+      "dependencies": [
+        "W5-T1",
+        "W5-T2"
+      ],
+      "status": "PLANNED",
+      "body": "Measure client performance, supported crew sizes, restoration and content moderation effort.\n\nStart only after the listed prerequisites and scope are accepted by a maintainer. Work in the project's own repository. Document assumptions, unresolved questions and reproducible evidence. This is a proposed work package, not a claim that the implementation already exists."
+    }
+  ]
+}
