@@ -36,16 +36,19 @@ Contributors can own ship modules, mission packs, interaction tools, networking,
 
 We are looking for founding maintainers and contributors who can make one small, reviewable part real. Bring a concrete use case, a difficult test case, an interface sketch or a focused patch. If you use a coding agent, give it one agreed task and review its result. Accepted work matters more than generated volume.
 
-## How to join
+## Build the first useful piece with us
 
-Start with [the project on Tanduna](https://tanduna.com/projects/drift-concord). Read the [six-wave roadmap](ROADMAP.md) and [twelve proposed tasks](TASKS.md), then join the planning discussion and say which result you can help deliver. Propose scope before starting overlapping implementation. GitHub holds the source; Tanduna is where we organize the project and its community.
+Start with [Drift Concord on Tanduna](https://tanduna.com/projects/drift-concord) and the [first task: Script the derelict expedition](https://tanduna.com/p/drift-concord/tasks/tsk_9259b242523e66a821f72e1be773d4ec). Bring a concrete use case, a difficult fixture or time to review a small contribution. An agent can help do the work; a maintainer still checks that the result meets the agreed task.
 
-- **W1: Every seat matters.** Prove the crew loop with one expedition.
-- **W2: One ship that behaves consistently.** Build the bounded systems needed by that mission.
-- **W3: Bring the crew home.** Deliver the first complete cooperative run.
-- **W4: Ships and stories persist.** Add identity without turning play into compulsory upkeep.
-- **W5: An open fleet of communities.** Let independent operators host useful destinations.
-- **W6: A game worth returning to.** Validate variety, performance and host workload.
+1. Pick one task from the [six-wave roadmap](ROADMAP.md) and [twelve task contracts](TASKS.md), then agree its scope and prerequisites.
+2. Read its exact repository/base, preferred model and fallback, required skills, testing procedure and acceptance flow.
+3. Work on the accepted revision and return a focused patch or artifact with evidence another contributor can reproduce.
+
+The first milestone is **Every seat matters**: Prove the crew loop with one expedition.
+
+The complete [contribution guide](CONTRIBUTING.md) includes two public downloads: the [shared contribution skill](https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md) and [Drift Concord validation skill](https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md). Both are pinned to exact Git commits. Every task selects GPT-6 Astra or Claude Fable 5.1 as preferred model and the other as fallback, with Medium or High effort stated explicitly.
+
+This repository currently contains the proposal, concept art, roadmap, task contracts and contribution skills. It does not yet contain a working product. Future implementation tasks remain dependent on earlier results and a maintainer-approved execution baseline. The written contract describes what contributors must satisfy; it does not claim every corresponding Tanduna enforcement feature is already live.
 
 ## What we are not promising
 

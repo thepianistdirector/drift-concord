@@ -1,0 +1,723 @@
+{
+  "project": "drift-concord",
+  "schema": "maintainer-authored-contract-v1",
+  "platformEnforcement": "Not claimed by this document; verify the current Tanduna task revision and production capabilities.",
+  "tasks": [
+    {
+      "taskKey": "W1-T1",
+      "taskId": "tsk_9259b242523e66a821f72e1be773d4ec",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_9259b242523e66a821f72e1be773d4ec",
+      "title": "Script the derelict expedition",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Maintainer accepts the scoped design protocol; this is not product implementation.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "medium"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "medium"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "The mission includes a consequential decision for pilot, engineer and field crew.",
+        "Document an alternate route to completion after one crew member disconnects."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "manual-protocol",
+        "procedure": "Walk the derelict expedition from embarkation through salvage and return with four crew roles. Rehearse missing crew and a failed objective; document useful decisions, coordination points and a recoverable ending.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": null,
+        "evidenceLocation": "docs/work/W1-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W1-T2",
+      "taskId": "tsk_2c17dabbd3fe6cfd158d43fd89ee3f1a",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_2c17dabbd3fe6cfd158d43fd89ee3f1a",
+      "title": "Prototype physical crew interactions",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "New players can perform each interaction with visible feedback and remappable controls.",
+        "A small group reports where coordination is enjoyable and where a role is idle."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Use a small physical interaction prototype to pick up, hand over, attach and release objects. Repeat with two actors reaching for the same object and one disconnecting; record ownership and usability failures.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W1-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W1-T1"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W2-T1",
+      "taskId": "tsk_aa6b588a7fd0addb66cc4fa689394865",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_aa6b588a7fd0addb66cc4fa689394865",
+      "title": "Implement the ship systems model",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Recorded input sequences replay to the same authoritative system state.",
+        "A broken subsystem has a visible diagnosis and a bounded recovery path."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Run fixed power, damage and repair sequences, interrupt one repair and repeat its request. Compare subsystem state and consumed resources with the agreed ship-system rules.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W2-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W1-T1",
+        "W1-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W2-T2",
+      "taskId": "tsk_d9e28118f2dac98fb87e8af334f13de7",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_d9e28118f2dac98fb87e8af334f13de7",
+      "title": "Implement shared movement and objects",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Cargo ownership and position remain consistent through boarding, docking and reconnect.",
+        "Test interaction latency and collision behavior on documented network conditions."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Control two clients independently while moving through the ship and manipulating shared objects. Add latency, competing grabs and reconnect; compare authoritative ownership and corrected positions.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W2-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W1-T1",
+        "W1-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W3-T1",
+      "taskId": "tsk_6cd4ec3670859892b088588824c52ab6",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_6cd4ec3670859892b088588824c52ab6",
+      "title": "Build the derelict and salvage objective",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "The expedition has a complete start, salvage decision, return and debrief.",
+        "Recoverable failures change the mission without silently deleting the crew's progress."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Complete the authored derelict objective, abandon it midway and restart from the supported recovery state. Verify salvage requirements and crew return are achievable without an undocumented facilitator action.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W3-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W2-T1",
+        "W2-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W3-T2",
+      "taskId": "tsk_7f004380e2de86829cb283e7f37aea8b",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_7f004380e2de86829cb283e7f37aea8b",
+      "title": "Run first-crew playtests",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Measure role downtime, onboarding failures and whether crews want another mission.",
+        "Publish a prioritized revision of the mission based on observed play."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "manual-protocol",
+        "procedure": "Observe new crews through one full expedition. Record useful participation by role, communication failures, abandonment and discomfort; distinguish tested crew sizes and session lengths from the eventual multiplayer ambition.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": null,
+        "evidenceLocation": "docs/work/W3-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W2-T1",
+        "W2-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W4-T1",
+      "taskId": "tsk_e5cc9ee7456e10a216b1f5b54b74e03f",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_e5cc9ee7456e10a216b1f5b54b74e03f",
+      "title": "Persist the ship and expedition journal",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A restarted server restores the ship and identifies incompatible content versions.",
+        "A crew can export its ship history without exposing private account data."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Save after damage and salvage changes, stop the server and reload on the supported version. Compare ship, cargo, crew and journal, then exercise the documented older-save migration or refusal.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W4-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W4-T2",
+      "taskId": "tsk_39ea36f9eb20f41a47de4fe4be473989",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_39ea36f9eb20f41a47de4fe4be473989",
+      "title": "Build the expedition authoring kit",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A contributor authors a second expedition without modifying core ship simulation.",
+        "Malformed or malicious package inputs fail before affecting a persistent ship."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Have a second author create an expedition using the published kit. Load it on a clean server; then remove a required asset or use an unsupported version and inspect the diagnostic and preserved state.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W4-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W3-T1",
+        "W3-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W5-T1",
+      "taskId": "tsk_aab13cbed84ea6c0ff573c30c10b0f2d",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_aab13cbed84ea6c0ff573c30c10b0f2d",
+      "title": "Package community hosting and moderation",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A second operator hosts a complete expedition from the documentation.",
+        "Test abusive joins, role permissions, removal and recovery without giving moderators hidden player advantage."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Have a second operator install, back up and recover the reference server. Rehearse a moderation action and its permitted appeal/recovery flow with test identities, documenting actual operator effort.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W5-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W4-T1",
+        "W4-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W5-T2",
+      "taskId": "tsk_ac12c2c4bafe59855e4de2dd28b402cc",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_ac12c2c4bafe59855e4de2dd28b402cc",
+      "title": "Prototype explicit sector handoff",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "A failed handoff leaves ship and cargo owned in exactly one recoverable location.",
+        "Players see connection and trust boundaries before transferring."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Interrupt sector departure, destination receipt and acknowledgement. Retry each case and reconcile ship/cargo/crew ownership; identify the supported recovery state without promising cross-region scale beyond the test.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W5-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W4-T1",
+        "W4-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W6-T1",
+      "taskId": "tsk_bf9be4fd5eaa5124438233002d616af4",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_bf9be4fd5eaa5124438233002d616af4",
+      "title": "Build a varied expedition pilot",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Each mission offers a different crew decision instead of only changing scenery.",
+        "Mixed-experience groups can complete the mission set and report meaningful role choice."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "manual-protocol",
+        "procedure": "Play the agreed varied expedition set with new and returning crews. Compare choices, repeated coordination patterns and replay willingness; record where different content still produces the same experience.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": null,
+        "evidenceLocation": "docs/work/W6-T1/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W5-T1",
+        "W5-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    },
+    {
+      "taskKey": "W6-T2",
+      "taskId": "tsk_cb87b359b8d6a0f5a3e3186ebc3eccc5",
+      "taskUrl": "https://tanduna.com/p/drift-concord/tasks/tsk_cb87b359b8d6a0f5a3e3186ebc3eccc5",
+      "title": "Publish performance and operations findings",
+      "repositoryUrl": "https://github.com/thepianistdirector/drift-concord",
+      "baseBranch": "main",
+      "planningBaseCommit": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881",
+      "baseMeaning": "Verified planning source containing public skills; not a claim that future prerequisite implementation exists.",
+      "executionGate": "Prerequisite results must be accepted and integrated. Maintainer publishes a new task revision against that integrated base before execution; runtime work also needs the real harness and exact allowed paths.",
+      "primaryModel": {
+        "provider": "openai",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "fallbackModel": {
+        "provider": "anthropic",
+        "model": "claude-fable-5-1",
+        "effort": "high"
+      },
+      "requiredSkills": [
+        {
+          "name": "tanduna-contribution",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/context-harbor/a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd/.agents/skills/tanduna-contribution/SKILL.md",
+          "version": "a288bac1ff8bf87fe382ee6bf15ace4c0a090cbd"
+        },
+        {
+          "name": "drift-concord-validation",
+          "url": "https://raw.githubusercontent.com/thepianistdirector/drift-concord/4554bc5fae2cd33a0da369b0fc288f62c8c0a881/.agents/skills/drift-concord-validation/SKILL.md",
+          "version": "4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        }
+      ],
+      "acceptanceCriteria": [
+        "Results name hardware, network conditions and mission complexity.",
+        "Set the next capacity target from measured constraints rather than a galaxy-sized launch promise."
+      ],
+      "acceptanceWorkflow": [
+        "Contributor identifies the saved Tanduna task revision, repository/base, accepted prerequisites, selected primary or fallback model and effort, and exact required skill versions.",
+        "Contributor performs the task-specific testing procedure and maps each original acceptance criterion to setup, expected result, observed result and reproducible evidence. Failed and unrun checks remain visible.",
+        "Maintainer reproduces the material checks, reviews the scoped patch or design artifact and verifies the stated model/skill evidence. Unsupported model claims or missing evidence remain unresolved rather than accepted automatically.",
+        "Maintainer records acceptance or requested changes against the reviewed revision. A passing format check, generated patch or completed model invocation does not by itself satisfy the task."
+      ],
+      "testingWorkflow": {
+        "mode": "repository-harness-and-runtime",
+        "procedure": "Run the same expedition workload on documented client/server hardware and network conditions. Publish frame/server timings, bandwidth and recovery incidents with the measured crew count and duration.",
+        "baselineCommands": [
+          "git rev-parse HEAD",
+          "git status --short",
+          "git diff --check 4554bc5fae2cd33a0da369b0fc288f62c8c0a881"
+        ],
+        "commandLimit": "These existing Git commands verify checkout identity and patch hygiene only. They do not replace functional tests.",
+        "runtimePrerequisite": "Exact functional commands, fixtures and paths must be ratified in the execution revision once the prerequisite-selected stack/harness exists. Do not claim these future checks ran.",
+        "evidenceLocation": "docs/work/W6-T2/acceptance.md"
+      },
+      "dependsOnTaskKeys": [
+        "W5-T1",
+        "W5-T2"
+      ],
+      "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
+    }
+  ]
+}
