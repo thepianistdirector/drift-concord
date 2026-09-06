@@ -248,7 +248,7 @@ Exact functional commands, fixtures and paths must be ratified in the execution 
 
 ## W3-T2 — Run first-crew playtests
 
-**Wave:** W3 · **Prerequisites:** W2-T1, W2-T2
+**Wave:** W3 · **Prerequisites:** W2-T1, W2-T2, W3-T1
 
 Observe complete expeditions by groups unfamiliar with the design.
 
@@ -440,7 +440,7 @@ Exact functional commands, fixtures and paths must be ratified in the execution 
 
 ## W5-T2 — Prototype explicit sector handoff
 
-**Wave:** W5 · **Prerequisites:** W4-T1, W4-T2
+**Wave:** W5 · **Prerequisites:** W4-T1, W4-T2, W5-T1
 
 Design and test ownership transfer between two cooperating sector servers.
 
@@ -536,7 +536,7 @@ This task uses the saved reproducible manual protocol. Distinguish paper/synthet
 
 ## W6-T2 — Publish performance and operations findings
 
-**Wave:** W6 · **Prerequisites:** W5-T1, W5-T2
+**Wave:** W6 · **Prerequisites:** W5-T1, W5-T2, W6-T1
 
 Measure client performance, supported crew sizes, restoration and content moderation effort.
 

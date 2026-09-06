@@ -355,7 +355,8 @@
       },
       "dependsOnTaskKeys": [
         "W2-T1",
-        "W2-T2"
+        "W2-T2",
+        "W3-T1"
       ],
       "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
     },
@@ -595,7 +596,8 @@
       },
       "dependsOnTaskKeys": [
         "W4-T1",
-        "W4-T2"
+        "W4-T2",
+        "W5-T1"
       ],
       "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
     },
@@ -715,7 +717,8 @@
       },
       "dependsOnTaskKeys": [
         "W5-T1",
-        "W5-T2"
+        "W5-T2",
+        "W6-T1"
       ],
       "status": "MAINTAINER_CONTRACT_PREPARED_NOT_EXECUTION_APPROVED"
     }
